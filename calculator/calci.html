@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css" type="text/css">
+    <script src="calci.js" defer></script>
+</head>
+<body>
+    <section class="calculator">
+        <form>
+            <input type="text" class="ioscreen" placeholder="0">
+        </form>
+        <div class="buttons">
+            <button onclick="display('7')" class="btn btn-color" data-num="7">7</button>
+            <button onclick="display('8')" class="btn btn-color" data-num="8">8</button>
+            <button onclick="display('9')" class="btn btn-color" data-num="9">9</button>
+            <button onclick="display('+')" class="btn btn-violet" data-num="+">+</button>
+
+            <button onclick="display('4')" class="btn btn-color" data-num="4">4</button>
+            <button onclick="display('5')" class="btn btn-color" data-num="5">5</button>
+            <button onclick="display('6')" class="btn btn-color" data-num="6">6</button>
+            <button onclick="display('-')" class="btn btn-violet" data-num="-">-</button>
+
+            <button onclick="display('1')" class="btn btn-color" data-num="1">1</button>
+            <button onclick="display('2')" class="btn btn-color" data-num="2">2</button>
+            <button onclick="display('3')" class="btn btn-color" data-num="3">3</button>
+            <button onclick="display('*')" class="btn btn-violet" data-num="*">*</button>
+
+            <button onclick="display('0')" class="btn btn-color" data-num="0">0</button>
+            <button onclick="display('.')" class="btn btn-color" data-num=".">.</button>
+            <button onclick="c()" class="btn btn-clear" data-num="C">C</button>
+            <button onclick="display('/')" class="btn btn-violet" data-num="/">/</button>
+            
+            <button onclick="calculate()" class="btn btn-equal" data-num="=">=</button>
+        </div>
+    </section>
+</body>
+</html>

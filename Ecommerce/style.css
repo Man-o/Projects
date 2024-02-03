@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Overpass&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+#nbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0.5rem 5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar-brand{
+    font-size: 23px;
+    color: #FFA500;
+    font-weight: bold;
+    font-family: 'Grape Nuts', cursive !important;
+    letter-spacing: 5px;
+    
+}
+ul{
+    gap: 5em;
+}
+#navbarSupportedContent a{
+    color:#fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #FFA500;
+}
+#navbarSupportedContent button{
+    background-color: #FFA500;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    flex-direction: column;
+}
+#brand{
+    font-size: 80px;
+    font-weight: bold;
+    /* font-family: 'Grape Nuts', cursive !important; */
+    color: #FFA500;
+    letter-spacing: 3px;
+    text-shadow:1px 5px 3px #333333;
+}
+#home p{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+    
+}
+#home button{
+    background-color: #FFA500;
+    border-radius: 1px;
+    
+}
+#about img{
+    height: 30vw;
+    width: 30vw;
+    margin-left: 100px;
+    margin-top: 80px;
+    border-radius: 300px;
+   
+}
+#about h1{
+    margin-top:80px;
+    font-weight: bold;
+}
+
+.card img{
+    max-width:100%;
+    height:200px;
+    object-fit: contain;
+    padding-top: 10px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background: #FFA500 !important;
+    border: none !important;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.card a{
+    margin-top: 2px !important;
+}
+#contact img{
+    height: 30vw;
+    width: 30vw;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+#contact h1{
+    margin-top: 80px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px;
+}
+#contact textarea{
+    margin: 10px;
+}
+#contact button{
+    background: #FFA500;
+    margin: 10px;
+    width: 100%;
+
+}

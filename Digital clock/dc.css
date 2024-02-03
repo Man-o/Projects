@@ -1,0 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@300&display=swap');
+body{
+    background-color: #c9ff7d;
+}
+#clock{
+    margin: 25vh;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+   
+}
+span{
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    padding: 2px;
+    
+}

@@ -1,0 +1,52 @@
+body{
+    background-color: #F5DF4D;  
+}
+form{
+    width: 400px;
+    margin: 7vh auto 0 auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form>button{
+    background-color:#00FF00;
+    border: 1px solid 	#00FF00;
+    padding:3px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer; 
+    
+}
+.form-validation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+   
+}
+input:focus{
+    outline: 0;
+}
+.form-validation .error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.form-validation.success input{
+    border-color: #0cc477;
+}
+.form-validation.error input{
+    border-color:red
+}
+/* input:hover{
+    background-color: aquamarine;
+} */
