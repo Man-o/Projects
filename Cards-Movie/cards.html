@@ -25,7 +25,7 @@
                         <i class="fa fa-star "></i>
                       </div>
                       <div class="btn">
-                        <button type="button">Book now <i class="fas fa-plus"></i> </button>
+                        <button type="button" id="button">Book now <i class="fas fa-plus"></i> </button>
                       </div>
                     
                     </div>
@@ -45,7 +45,7 @@
                         <i class="fa fa-star "></i>
                       </div>
                       <div class="btn">
-                        <button type="button">Book now  <i class="fas fa-plus"></i></button>
+                        <button type="button" id="button">Book now  <i class="fas fa-plus"></i></button>
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                         <i class="fa fa-star checked"></i>
                       </div>
                       <div class="btn">
-                        <button type="button">Book now  <i class="fas fa-plus"></i></button>
+                        <button type="button" id="button">Book now  <i class="fas fa-plus"></i></button>
                       </div>
                     
                     </div>
@@ -86,13 +86,25 @@
                         <i class="fa fa-star "></i>
                       </div>
                       <div class="btn">
-                        <button type="button">Book now  <i class="fas fa-plus"></i></button>
+                        <button type="button" id="button" >Book now  <i class="fas fa-plus"></i></button>
                       </div>
-                    
                     </div>
                   </div>
             </div>
         </div>
     </div>
+    <script>
+      // const bookingmsg=document.querySelector('button')
+      // bookingmsg.addEventListener('click',()=>{
+      //   bookingmsg.innerText="Booking";
+      // })
+        let booking=document.querySelector('button');
+        booking.addEventListener('click',()=>{
+          let bkg=document.createElement("p");
+          bkg.innerText="Booking successfull";
+        })
+       
+        
+    </script>
 </body>
 </html>
