@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-2 rounded-lg max-w-full md:max-w-sm mx-auto mt-10 bg-gradient-to-r from-blue-300 to-green-500 p-6">
+        <h1 class="text-center text-3xl mt-2">Weather App</h1>
+        <form class="form flex flex-col md:flex-row  p-8">
+            <input type="text" placeholder="Enter City" class="bg-slate-200 me-2 text-black ps-2 mb-4 md:mb-0" id="city">
+            <button type="submit" class="search bg-indigo-600 md:px-3 py-2 text-sm font-semibold text-white">Search</button>
+        </form>
+        <div class="icon text-center mt-4 hidden">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSng5iGr1TB2UmRnLdjzCBVlhVuJ2nPzi1y9A&s" class="h-[80px] mx-[auto]" alt="">
+            <h4 class="mt-2" id="city-name"></h4>
+            <h3 id="temp"></h3>
+        </div>
+        <div class="">
+            <div class="flex flex-col md:flex-row justify-between mt-4" >
+                <div class="ms-4 mb-2 text-center">
+                    <h3>Humidity:</h3>
+                    <h3 id="hum"></h3>
+                </div>
+                <div class="me-4 mb-2 text-center">
+                    <h3>Wind speed:</h3>
+                    <h3 id="ws"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
