@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion freaks</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body" class="bg-light">
     <!--Navbar bootstrap-->
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark" id="nbar">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body container-fluid" data-bs-theme="dark" id="nbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home">F-FREAKS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -19,28 +21,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#collections">Collections</a>
+                <a class="nav-link" href="#collections"><i class="fa-solid fa-cart-shopping"></i> Collections</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
               </li>
             </ul>
-            <button class="btn p-2 my-lg-0 my-1">Sign in</button>
-        </div>
-      </nav>
+            <div id="signin">
+              <button class="btn signin  p-2 my-lg-0 my-1" id="s"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+            </div>
+            <div id="toggle">
+              <button class="btn  moon ms-4" >
+                <i class="bi bi-moon-stars"></i>
+              </button>
+              <button class="btn  sun ms-4 hidden">
+                <i class="bi bi-sun"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
       <!--Home-->
       <section id="home">
         <h1 id="brand" class="text-center">Fashion Freaks</h1>
-        <p>Unleash Your Style, Redefine Your Presence</p>
+        <p id="homeText">Unleash Your Style, Redefine Your Presence</p>
         <div class="input-group m-2">
           <input type="email" class="form-control" placeholder="ffreaks@gmail.com">
-          <button class="btn signin">Let begins</button>
+          <button  class="btn">Let begins</button>
         </div>
       </section>
       <!--About-->
@@ -51,8 +63,8 @@
               <img src="ff_logo.jpg" alt="" class="img_fluid"><!--Responsive-->
             </div>
             <div class="col-lg-6 col-md-6 col-12">
-              <h1>ABOUT US</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!
+              <h1 class="text-warning">ABOUT US</h1>
+              <p id="aboutText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur iusto veritatis libero impedit aliquid, distinctio explicabo consequuntur nulla recusandae nemo temporibus vel dicta blanditiis sit officiis hic nisi excepturi fugit!
               </p>
             </div>
           </div>
@@ -64,42 +76,42 @@
           <h1 class="text-center m-5">OUR COLLECTIONS</h1>
         <div class="row">
           <div class="col-lg-3 col-md-4 col-12">
-            <div class="card">
+            <div class="card mt-2">
               <img src="shirtprof..jpg" class="card-img-top img_fluid" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Shirts</h5>
                 <p>Starts from <b>₹600</b></p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i> See more </i></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-12">
-            <div class="card">
+            <div class="card mt-2">
               <img src="pantprof.jpg" class="card-img-top img_fluid" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Pants</h5>
                 <p>Starts from <b>₹700</b></p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i> See more</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-12">
-            <div class="card">
+            <div class="card mt-2">
               <img src="tshirtprof.jpg" class="card-img-top img_fluid" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Tshirts</h5>
                 <p>Starts from <b>₹300</b></p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i> See more</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-12">
-            <div class="card">
+            <div class="card mt-2">
               <img src="crocksprof.jpg" class="card-img-top img_fluid" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Crocks</h5>
                 <p>Starts from <b>₹400</b></p>
-                <a href="#" class="btn btn-primary">See more</a>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-angles-right"></i> See more</a>
               </div>
             </div>
           </div>
@@ -120,8 +132,16 @@
                 <input type="text" class="form-control" placeholder="Gmail ex:ffreaks@gmail.com">
                 <textarea name="" id="" class="form-control" placeholder="Give your feedback"></textarea>
                 <button class="btn">Send feedback</button>
+              </form>
+              <a href=""><i class="fa-solid fa-comment-dots"></i> Chat</a>
           </div>
         </div>
       </section>
+      <footer class="text-center p-2">
+        <h2 >CopyRights:2024<sup>&copy;</sup></h2>
+        <p>Developed & Maintained by &reg;<a href="">Freaky</a></p>
+      </footer>
+      <script src="script.js">
+      </script>
 </body>
 </html>
